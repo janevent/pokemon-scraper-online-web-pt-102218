@@ -22,9 +22,9 @@ class Pokemon
   end
   
   def self.find(id, db)
-    attr = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id)
+    attr = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id).flatten
     # binding.pry
-   Pokemon.new(id: attr.flatten[0], name: attr.flatten[1], type: attr.flatten[2], db: db)
+   Pokemon.new(id: attr[0], name: attr[1], type: attr[2], db: db)
    
   end
   
