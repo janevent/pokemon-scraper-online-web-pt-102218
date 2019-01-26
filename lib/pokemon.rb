@@ -26,7 +26,7 @@ class Pokemon
     binding.pry
     # "id: #{attr.flatten[0]}
       
-    # Pokemon.new()
+    Pokemon.new()
   end
   
 end
