@@ -23,8 +23,8 @@ class Pokemon
   
   def self.find(id, db)
     attr = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?", id)
-    # binding.pry
-    attr.flatten.each do |i|
+    binding.pry
+    "id: #{attr.flatten[0]}
       
     Pokemon.new(attr.flatten.join(", "))
   end
