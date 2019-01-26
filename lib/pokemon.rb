@@ -5,7 +5,7 @@ class Pokemon
   
   @@all = []
   
-  def initialize(id: 1, name: "Pikachu", type: "electric", db: "<SQLite3::Database:0x00000003a2c620")
+  def initialize(id: , name: , type: , db: "<SQLite3::Database:0x00000003a2c620")
     @id = id
     @name = name,
     @type = type,
